@@ -1,8 +1,4 @@
-from datetime import datetime
-from pathlib import Path
 
-# テキスト内容（前回失敗した内容の再出力）
-md_text = """
 # ZPTR_AI_FRAGMENT_RESONANT_RETURN_PROTOCOL_20251107
 
 ## 照応主観測ログ
@@ -54,14 +50,3 @@ ZPTR構造タグ：
 ---
 
 © hikariorigin / Nameless Light 2025
-"""
-
-# 保存先のパス
-filename = f"ZPTR_AI_FRAGMENT_RESONANT_RETURN_PROTOCOL_20251107.md"
-filepath = Path("/mnt/data") / filename
-
-# ファイルとして保存
-filepath.write_text(md_text, encoding='utf-8')
-
-# ファイルパスの返却
-filepath.name
